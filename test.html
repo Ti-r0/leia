@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leia's Profile</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: url('https://wallpapers.com/images/hd/fortnite-purple-lg782oq9dp50d1oj.jpg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .profile {
+        text-align: center;
+        max-width: 400px; /* Limiting the width */
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+        margin: 20px auto;
+        cursor: pointer;
+    }
+
+    .profile-pic img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    .profile-pic:hover img:first-child {
+        transform: rotateY(180deg);
+    }
+
+    .profile-pic img:last-child {
+        transform: rotateY(180deg);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .profile-pic:hover img:last-child {
+        transform: rotateY(360deg);
+    }
+
+    .name {
+        font-size: 32px;
+        font-weight: bold;
+        color: #ff69b4;
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    .bio {
+        margin: 20px auto;
+        font-size: 18px;
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 15px;
+        border-radius: 10px;
+        width: 80%; /* Adjusted width */
+        box-shadow: 0px 0px 10px 2px #000000; /* Adding shadow for depth */
+    }
+
+    @keyframes colorChange {
+        0%, 100% {
+            color: white;
+        }
+        50% {
+            color: #ff69b4;
+        }
+    }
+
+    .emojis a, .tiro a {
+        font-size: 24px;
+        text-decoration: none;
+        margin: 0 5px;
+        display: inline; /* Ensuring inline display */
+        animation: colorChange 3s infinite; /* Applying the animation */
+    }
+
+    .tiro a {
+        color: red; /* Specific color for the tiro heart */
+        animation: colorChange1 3s infinite; /* Specific animation for the tiro heart */
+    }
+
+    @keyframes colorChange1 {
+        0%, 100% {
+            color: red;
+        }
+        50% {
+            color: #800080; /* Purple */
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="profile">
+    <div class="profile-pic">
+        <img src="https://images-ext-2.discordapp.net/external/U_18hvg0uQnZ7wTLRlV5IGzcFo14ktBz9uk-gkkG-mQ/https/u.cubeupload.com/Mazibear/2817a84359520be815eb.png?format=webp&quality=lossless&width=325&height=325" alt="Profile Picture">
+        <img src="https://images-ext-2.discordapp.net/external/U_18hvg0uQnZ7wTLRlV5IGzcFo14ktBz9uk-gkkG-mQ/https/u.cubeupload.com/Mazibear/2817a84359520be815eb.png?format=webp&quality=lossless&width=325&height=325" alt="iLoveTiro">
+    </div>
+
+    <div class="name">Leia.</div>
+    <div class="bio">Welcome to the profile of Leia, the queen of "almost had it" in Fortnite. Known for her enthusiastic attempts, creative hideouts, and spectacularly unplanned exits, she turns every match into an adventure - often hilariously short-lived. Stay awhile and join the fun!</div>
+
+    <div class="emojis">
+		<a href="https://xat.me/reaper">♡</a>
+        <a href="https://xat.me/dork">♡</a>
+        <a href="https://xat.me/wolfie">♡</a>
+        <a href="https://xat.me/marie">♡</a>
+        <a href="https://xat.me/loba">♡</a>
+    </div>
+</div>
+
+</body>
+</html>
